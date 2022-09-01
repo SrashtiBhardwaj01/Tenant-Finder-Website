@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin:0;
+    padding:0;
+	box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    margin-bottom:20px;
+}
+html,body{
+	display: grid;
+	height: 100%;
+	width: 100%;
+	place-items: center;
+	background: #f2f2f2;
+}
+::selection{
+    background: #4158d0;
+    color: #fff;
+  }
+.events{
+    position:relative;
+    height: 100%;
+    width:100%;
+    padding:50px,100px;
+    display:flex;
+    justify-content:center;
+    background-image:url('https://images.designtrends.com/wp-content/uploads/2016/06/06114352/Home-Office-With-Blue-Interior.jpg');
+    background-size: cover;
+    align-items:center;
+    flex-direction:column;
+}
+.events::before{
+    content:"";
+    background-size:cover;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color:rgba(10, 10, 10, 0.9);
+}
+.events .primary{
+    width:30%;
+    height:90%;
+    background:#fff;
+    position:relative;
+    border:2px solid #000;
+    box-shadow: 5px 10px;
+    margin-bottom:20px;
+    margin-top:10px;
+    border-radius: 15px 15px 15px 15px;
+	align:center;
+}
+.events .paragraph{
+    font-size: 30px;
+    font-weight: 800;
+    width:100%;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    user-select: none;
+    background: linear-gradient(-135deg, #23dbd2, #185c12);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',sans-serif;
+}
+.events form{
+    padding: 10px 30px 50px 30px;
+}
+.events form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+.events form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    padding-left: 20px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+.events form .field input:focus,
+form .field input:valid{
+    border-color: #4158d0;
+  }
+.events form .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #000;
+    font-size: 17px;
+    font-weight: 200;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+    top: 0%;
+    font-size: 16px;
+    color: #4158d0;
+    background: #fff;
+    transform: translateY(-50%);
+  }
+form .field input[type="submit"]{
+    color: #fff;
+    border: none;
+    padding-left: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #185c12, #23dbd2);
+    transition: all 0.3s ease;
+  }
+form .field input[type="submit"]:active{
+    transform: scale(0.95);
+  }
+  form .pass-link a{
+    color: #4158d0;
+    text-decoration: none;
+  }
+  form .pass-link a:hover{
+    text-decoration: underline;
+  }
+  
+

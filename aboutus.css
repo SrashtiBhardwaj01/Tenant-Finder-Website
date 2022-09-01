@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body{
+    height:100%;
+}
+.section{
+width: 100%;
+height: 100%;
+background-color: #ddd;
+}
+.container{
+width: 80%;
+display: flex;
+position:relative;
+margin:auto;
+padding-top: 80px;
+}
+p{
+  text-align:justify;
+}
+.content{
+float: left;
+width: 55%;
+}
+.image-section{
+float: right;
+width: 40%;
+}
+.image-section img{
+width: 100%;
+height: auto;
+}
+.content  h3{
+margin-top: 20px;
+color:#5d5d5d;
+font-size: 21px;
+}
+.content  p{
+margin-top: 10px;
+font-family: sans-serif;
+font-size: 18px;
+line-height: 1.5;
+}
+ .content .button{
+margin-top: 30px;
+}
+.content .button a{
+background-color: #3d3d3d;
+padding:12px 40px;
+text-decoration: none;
+color:#fff;
+font-size: 25px;
+letter-spacing: 1.5px;
+}
+ .content .button a:hover{
+background-color: #a52a2a;
+color:#fff;
+}
+
+.social i:hover{
+color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+.container{
+width: 80%;
+display: block;
+margin:auto;
+padding-top:50px;
+}
+.content{
+float:none;
+width:100%;
+display: block;
+margin:auto;
+}
+.image-section{
+float:none;
+width:100%;
+
+}
+.image-section img{
+width: 100%;
+height: auto;
+display: block;
+margin:auto;
+
+}
+.content .button{
+    margin-top: 30px;
+    }
+.content .button a{
+    background-color: #3d3d3d;
+    padding:12px 40px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    }
+.content .button a:hover{
+    background-color: #a52a2a;
+    color:#fff;
+    }
+ .title{
+text-align: center;
+font-size: 19px;
+}
+ .content .button{
+text-align: center;
+}
+ .content .button a{
+padding:9px 30px;
+}
+ .social{
+text-align: center;
+}
+
+}
+.button{
+    align:left;
+}
+ .content .button{
+    text-align: center;
+}
+ .content .button a{
+    padding:9px 30px;
+}
+
+
+/*----Navbar-----*/
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .logo{
+    color: rgb(226, 222, 215);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-right: 600px;
+  }
+  
+  .mlogo{
+    height: 7vh;
+    width: 80px;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 5px 20px 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav-items{
+    height: 100%;
+    font-weight: bold;
+  }
+  
+  .nav-items ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-items li{
+    list-style: none;
+  }
+  
+  .nav-items li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .nav-items li:hover{
+    background-color: #555;
+    height: 8vh;
+  }
+  
+  .toggle-btn{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* ------responsive nav------- */
+  
+  @media (max-width: 1296px){
+    nav{
+      padding-bottom: 50%;
+    }
+  
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .logo{
+        display: none;
+      }
+  
+      .mlogo{
+        padding-right: 20px;
+        margin-left: 0;
+      }
+  
+    .toggle-btn{
+        display: flex;
+    }
+  
+    .nav-items{
+        display: none;
+        width: 100%;
+    }
+  
+    .nav-items ul{
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .nav-items ul li{
+        text-align: center;
+    }
+  
+    .nav-items ul li a{
+        padding: .5rem 1rem;
+    }
+  
+    .nav-items.active{
+        display: flex;
+    }
+  }
+  
+  
+  
+  
+  /* --------footer-------- */
+  
+  .footer{
+    background-color: #201c1c;
+    color: whitesmoke;
+    box-sizing: border-box;
+    padding: 70px 0;
+    margin-top:100px;
+  }
+  
+  .container2{
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col{
+    width: 22%;
+    padding: 0 15px;
+  }
+  
+  .footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  
+  }
+  
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  footer hr{
+    margin-top: 20px;
+  }
+  
+  footer p{
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    left: 40%;
+    position: absolute;
+  }
+  
+  /*----- responsive------- */
+  
+  @media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    footer p{
+      left: 12%;
+    }
+  } 
+  
+  
+  

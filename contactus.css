@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body{
+    margin:0;
+    padding:0;
+    bow-sizing: border_box;
+    font-family:'Poppins', sans-serif;
+}
+.contact{
+    position:relative;
+    height: 100%;
+    padding:50px,100px;
+    display:flex;
+    justify-content:center;
+    background-image:url('https://www.bridgeland.com/wp-content/uploads/2020/10/Model-Tour-Hero-BG.jpg');
+    background-size: cover;
+    align-items:center;
+    flex-direction:column;
+}
+.contact::before{
+    content:"";
+    background-size:cover;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+.contact .content{
+    width:80%;
+    text-align:center;
+}
+.contact .content h2{
+    font-size:36px;
+    font-weight:500;
+    color:#fff;
+    position :relative;
+}
+.contact .content p{
+    font-weight: 300;
+    color:#fff;
+    position :relative;
+}
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+}
+.container .contactInfo{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+}
+.container .contactInfo .box{
+    position:relative;
+    padding:20px,0;
+    display:flex;
+}
+.container .contactInfo .box .icon{
+    min-width:60px;
+    height:60px;
+    background:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    font-size: 20px;
+}
+.container .contactInfo .box .text{
+    display:flex;
+    margin-Left:20px;
+    font-size: 16px;
+    color:#fff;
+    flex-direction:column;
+    font-weight:300;
+}
+.container .contactInfo .box .text h3{
+    font-weight:500;
+    color:rgb(0, 119, 255);
+}
+.contact_form{
+    width:40%;
+    padding:40px;
+    background-color:#fff;
+    position:relative;
+}
+.contact_form h2{
+    font-size:30px;
+    color:#333;
+    position:relative;
+    font-weight:500;
+}
+.contact_form .inputBox{
+    position:relative;
+    width:100%;
+    margin-top:10px;
+}
+.contact_form .inputBox input,
+.contact_form .inputBox textarea{
+    width:60%;
+    padding:5px,0;
+    font-size:16px;
+    margin:10px,0;
+    border-top-width:0px;
+    border-left-width:0px;
+    border-right-width:0px;
+    border-bottom-width:2px;
+    border-color:#333;
+    outline:none;
+    resize:none;
+}
+.contact_form .inputBox span{
+    position:relative;
+    left:0;
+    padding:5px,0;
+    font-size:16px;
+    margin:10px,0;
+    pointer-events:none;
+    transition:0.5s;
+    color:#666;
+}
+.contact_form .inputBox input:focus ~ span,
+.contact_form .inputBox input:valid ~ span,
+.contact_form .inputBox textarea:focus ~ span,
+.contact_form .inputBox textarea:valid ~ span {
+    color:#e91e63;
+    font-size:12px;
+    transform: translateY(-20px);
+}
+.contact_form .inputBox input[type="submit"]{
+    width:100px;
+    background:#00bcd4;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    padding:10px;
+    font-size:18px;
+}
+@media (max-width:991px){
+    .contact{
+        padding:50px;
+    }
+    .container{
+        flex-direction:column;
+    }
+    .container .contactInfo{
+        margin-bottom:40px;
+    }
+    .container .contactInfo,
+    .contact_form{
+        width:100%;
+    }
+}
+
+
+
+/*----Navbar-----*/
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    height: 8vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .logo{
+    color: rgb(226, 222, 215);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-right: 600px;
+  }
+  
+  .mlogo{
+    height: 7vh;
+    width: 80px;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 5px 20px 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav-items{
+    height: 100%;
+    font-weight: bold;
+  }
+  
+  .nav-items ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-items li{
+    list-style: none;
+  }
+  
+  .nav-items li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .nav-items li:hover{
+    background-color: #555;
+    height: 8vh;
+  }
+  
+  .toggle-btn{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* ------responsive nav------- */
+  
+  @media (max-width: 1296px){
+    nav{
+      padding-bottom: 50%;
+    }
+  
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .logo{
+        display: none;
+      }
+  
+      .mlogo{
+        padding-right: 20px;
+        margin-left: 0;
+      }
+  
+    .toggle-btn{
+        display: flex;
+    }
+  
+    .nav-items{
+        display: none;
+        width: 100%;
+    }
+  
+    .nav-items ul{
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .nav-items ul li{
+        text-align: center;
+    }
+  
+    .nav-items ul li a{
+        padding: .5rem 1rem;
+    }
+  
+    .nav-items.active{
+        display: flex;
+    }
+  }
+  
+  
+  
+  
+  /* --------footer-------- */
+  
+  .footer{
+    background-color: #201c1c;
+    color: whitesmoke;
+    box-sizing: border-box;
+    padding: 70px 0;
+    margin-top:0px;
+  }
+  
+  .container2{
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col{
+    width: 22%;
+    padding: 0 15px;
+  }
+  
+  .footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  
+  }
+  
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  footer hr{
+    margin-top: 20px;
+  }
+  
+  footer p{
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    left: 40%;
+    position: absolute;
+  }
+  
+  /*----- responsive------- */
+  
+  @media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    footer p{
+      left: 12%;
+    }
+  } 
+  
+  
+  

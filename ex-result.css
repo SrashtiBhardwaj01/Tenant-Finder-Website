@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    height: 8vh;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .logo{
+    color: rgb(226, 222, 215);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-right: 600px;
+  }
+  
+  .mlogo{
+    height: 7vh;
+    width: 80px;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 5px 20px 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav-items{
+    height: 100%;
+    font-weight: bold;
+  }
+  
+  .nav-items ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-items li{
+    list-style: none;
+  }
+  
+  .nav-items li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .nav-items li:hover{
+    background-color: #555;
+    height: 8vh;
+  }
+  
+  .toggle-btn{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* ------responsive nav------- */
+  
+  @media (max-width: 1296px){
+    nav{
+      padding-bottom: 50%;
+    }
+  
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .logo{
+        display: none;
+      }
+  
+      .mlogo{
+        padding-right: 20px;
+        margin-left: 0;
+      }
+  
+    .toggle-btn{
+        display: flex;
+    }
+  
+    .nav-items{
+        display: none;
+        width: 100%;
+    }
+  
+    .nav-items ul{
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .nav-items ul li{
+        text-align: center;
+    }
+  
+    .nav-items ul li a{
+        padding: .5rem 1rem;
+    }
+  
+    .nav-items.active{
+        display: flex;
+    }
+  }
+  
+
+.house-details{
+	padding: 0 12%;
+}
+.house-title{
+	margin-top: 50px;
+}
+.house-title h1{
+	font-weight: 600;
+}
+.house-title.row{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 10px 0;
+}
+.house-title span{
+	margin: 0 20px;
+}
+.house-title i{
+     color: #ff5361;
+	 font-size: 14px;
+}
+.gallery{
+ 	display: grid;
+	grid-gap: 10px;
+	grid-template-areas: 'first first . .' 'first first . .';
+	margin: 20px 0;
+}
+.gallery div img{
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+}
+.gallery-img-1{
+	grid-area: first;
+}	
+.small-details h2{
+	font-weight: 500;
+}
+.small-details h4{
+	text-align: right;
+	font-size: 22px;
+}	
+
+.small-details button{
+  width: 15%;
+  height: 5vh;
+  background-color: rgb(56, 173, 189);
+  color: #fff;
+  border: 0ch;
+  border-radius: 20px;
+}
+
+.line{
+	border: 0;
+	height: 1px;
+	background: #ccc;
+	width: 100%;
+	max-width: 800px;
+	margin: 20px 0 50px;
+}
+
+.check-form{
+	margin: 30px 0;
+	background: #fff;
+	box-shadow: 0 0 30px rgba(0,0,0,0.3);
+	border-radius: 8px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 10px 50px;
+}
+.check-form label{
+	display: block;
+}
+.check-form div{
+	padding: 20px;
+}
+.check-form input{
+	background: transparent;
+	border: 0;
+	outline: none;
+}
+.check-form button{
+	background: #ff5361;
+	border: 0;
+	outline: none;
+	color: #fff;
+	padding: 18px;
+	width: 350px;
+	border-radius: 8px;
+	font-size: 16px;
+}
+.guest-field{
+	flex: 1;
+}	
+.detals-list{
+	list-style: none;
+	margin: 50px 0;
+}
+.details-list li{
+	margin-left: 50px;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #555;
+	position: relative;
+}
+.details-list li span{
+	display: block;
+	font-weight: 400;
+	font-size: 16px;
+}
+.details-list li i{
+	position: absolute;
+	top: 5px;
+	left: -40px;
+}	
+.home-desc{
+	max-width: 700px;
+	margin-bottom: 50px;
+}
+.map{
+	margin: 50px 0;
+}
+.map iframe{
+	width: 100%;
+	margin-bottom: 300x;
+}
+.map h3{
+	font-size: 26px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+.map b{
+	display: block;
+	margin-bottom:16px;
+}
+
+.host{
+	display: flex;
+	align-items: center;
+}
+.host img{
+	width: 80px;
+	border-radius: 50px;
+	margin-right: 30px;
+}
+.host h2{
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.host i{
+	color: #ff5361;
+}
+.contact-host{
+	display: inline-block;
+	margin: 40px 0 40px 120px;
+	text-decoration: none;
+	color: #555;
+	padding: 15px 50px;
+	border: 1px solid #ff5361;
+	border-radius: 8px;
+}
+/*-----media query for house details page--------*/	
+@media only screen and (max-width: 700px){
+	.house-details{
+		margin-top: 150px;
+	}
+	.row p{
+		margin-top: 10px;
+	}
+	.gallery{
+		grid-template-areas: 'first first' '. .' '. .';
+	}
+	.small-details h2{
+		font-size: 20px;
+		margin-top: 24px;
+	}
+	.small-details h4{
+		text-align: left;
+		margin: 10px 0;
+		font-size: 18px;
+	}
+	.check-form{
+		padding: 10px 30px;
+	}
+	.check-form div{
+		padding: 20px 0;
+		width: 100%;
+	}
+	.check-form input{
+		border-bottom: 1px solid #ccc;
+		width: 100%;
+		padding-bottom: 5px;
+	}
+	.check-form button{
+		font-size: 14px;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		border-radius: 4px;
+	}
+	.host{
+		display: block;
+		line-height: 28px;
+	}
+	.contact-host{
+		margin: 40px 0;
+	}
+}
+
+/* --------footer-------- */
+
+.footer{
+    background-color: #201c1c;
+    color: whitesmoke;
+    box-sizing: border-box;
+    padding: 70px 0;
+	width: 100%;
+  }
+  
+  .container2{
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col{
+    width: 22%;
+    padding: 0 15px;
+  }
+  
+  .footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  
+  }
+  
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  ul{
+    list-style: none;
+  }
+
+  footer hr{
+    margin-top: 20px;
+  }
+
+  footer p{
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    left: 40%;
+    position: absolute;
+  }
+  
+  /*----- responsive------- */
+  
+  @media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    footer p{
+      left: 12%;
+    }
+  } 

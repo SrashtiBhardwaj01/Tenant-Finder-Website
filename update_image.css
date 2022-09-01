@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    font-family:'Poppins', sans-serif;
+}
+.contact{
+    position:relative;
+    min-height: 100vh;
+    padding:50px,100px;
+    display:flex;
+    justify-content:center;
+    background-image:url('https://media.architecturaldigest.com/photos/58f7cf1a8bfbf566da78acc2/master/pass/IShvzncvwa127j0000000000.jpg');
+    background-size: cover;
+    align-items:center;
+    flex-direction:column;
+}
+.contact::before{
+    content:"";
+    background-size:cover;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+hr{
+    background-color: rgb(123, 121, 121);;
+}
+h2{
+    margin-top:40px;
+    color:#fff;
+}
+h6,.field label{
+    color:aliceblue;
+}
+.inputBox input[type="submit"]{
+    width:100px;
+    background:#00bcd4;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    padding:10px;
+    font-size:18px;
+}
+form .pass-link a{
+    color: #4158d0;
+    text-decoration: none;
+  }
+  form .pass-link a:hover{
+    text-decoration: underline;
+  }
+  
+  
+  
